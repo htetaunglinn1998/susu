@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Su's Gallery</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Happy Valentine's Day</h1>
+    <div class="box">
+      <span style="--i: 1;"
+        ><img src="image/img1.jpg" alt="sample.photo"
+      /></span>
+      <span style="--i: 2;"
+        ><img src="image/img2.jpg" alt="sample.photo"
+      /></span>
+      <span style="--i: 3;"
+        ><img src="image/img3.jpg" alt="sample.photo"
+      /></span>
+      <span style="--i: 4;"
+        ><img src="image/img4.jpg" alt="sample.photo"
+      /></span>
+      <span style="--i: 5;"
+        ><img src="image/img5.jpg" alt="sample.photo"
+      /></span>
+      <span style="--i: 6;"
+        ><img src="image/img6.jpg" alt="sample.photo"
+      /></span>
+      <span style="--i: 7;"
+        ><img src="image/img7.jpg" alt="sample.photo"
+      /></span>
+      <span style="--i: 8;"
+        ><img src="image/img8.jpg" alt="sample.photo" />
+      </span>
+    </div>
+
+    <iframe src="sound/background_music.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe> 
+
+    <audio autoplay loop  id="playAudio">
+      <source src="sound/background_music.mp3">
+  </audio>
+
+
+  <script type="text/javascript">
+      var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  if (!isChrome){
+      $('#iframeAudio').remove()
+  }
+  else {
+      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
+  }
+  </script>
+  </body>
+</html>
